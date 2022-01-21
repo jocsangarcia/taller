@@ -1,0 +1,368 @@
+
+*{
+ padding: 0px;
+ margin: 0px;
+box-sizing: border-box;
+max-width: 1000%;
+
+}
+
+
+body{
+ margin: 0px auto;
+ min-height: 100%;
+ background-image: linear-gradient(to right, #434343 0%, black 100%);
+  font-family: 'Teko', sans-serif;
+}
+
+header{
+
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
+    width: 100%;
+    height: 100px; 
+    position: relative;
+    
+ }
+ 
+.img{
+width: 100px;
+height: 100px;
+float: left;
+padding: 8px;
+
+}
+
+
+ 
+
+ 
+.menu{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 9rem;
+    height: 100px;
+
+}
+
+.menu ul{
+
+    list-style: none;
+    display: flex;
+
+}
+ 
+.menu ul li{
+ 
+    margin-right: 1.5rem;
+    
+    
+        
+}
+
+.menu ul li a:hover{
+  
+    background-color: black;
+}
+
+.iconos{
+  margin-right: 0;  
+}
+
+.menu ul li a{
+
+     text-decoration: none;
+    list-style: none;
+    color: azure;
+}
+
+
+.baner{
+
+    width: 100%;
+    height: 350px;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+
+.img1{
+ width: 150px;
+height: 150px;
+border-radius: 100%;
+
+
+}
+
+.wrap{
+
+     width: 1100px;
+    margin: 350px auto 0px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.tarjeta-wrap{
+   
+    margin: 0px 150px 0px 150px;
+   -webkit-perspective: 800;
+   perspective: 800;
+   
+   
+}
+
+.tarjeta{
+
+    width: 150px;
+    height: 150px;
+    background: black;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s ease;
+
+    
+}
+
+.delantera, .trsera{
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+     backface-visibility: hidden;
+}
+
+.trsera{
+
+    transform: rotateY(180deg);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.tarjeta-wrap:hover .tarjeta{
+
+    transform: rotateY(180deg);
+}
+
+.delantera{
+    width: 100%;
+}
+.card1{
+    
+    background-image: url(./imagenes/Cristiano\ Ronaldo\ \(@Cristiano\).jpg);
+    background-size: cover;
+    
+     
+}
+
+
+.card2{
+      
+    background-image: url(./imagenes/suuuu.jpg);
+    background-size: cover;
+
+
+}
+
+.card3{
+
+    background-image: url(./imagenes/Dos\ años\ de\ la\ chilena\ de\ Cristiano\ a\ la\ Juve.jpg);  
+    background-size: cover;    
+}
+
+.figura{
+
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
+}
+
+.titulos h1{
+    
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    
+}
+
+.titulos h3{
+  
+    font-family: 'Luxurious Roman', cursive;
+    color: white;
+}
+
+.titulos{
+
+    text-align: center;
+   margin:15px 0px 30px 0px;
+   
+}
+
+.linea{
+
+    border-top: 5px solid rgb(91, 91, 160);
+    margin-bottom: 20px;
+}
+ .contenedor{
+
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 3px;
+ }
+
+ .contenedor .imagen{
+     width: 32%;
+     position: relative;
+     height: 250px;
+     margin-bottom:5px;
+     box-shadow: 0px 0px 3px 0px rgb(0, 0, .75);
+ }
+
+ .imagen img{
+
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+
+ .overli{
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(255,255,255,0.40);
+    width: 100%;
+    height: 0%;
+    transition: .5 ease;
+    overflow: hidden;
+
+
+ }
+
+.overli h4{
+
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    font-weight: 300;
+ }
+
+ .imagen:hover .overli{
+
+    height: 100%;
+    cursor: pointer;
+ }
+ 
+ .video{
+     margin: 100px auto;
+     width: 500px;
+     height: 500px;
+     justify-content: center;
+     display: flex;
+ }
+
+.footer{
+
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    
+ }
+
+ .mapa{
+    
+    width: 200px;
+    height: 200px;
+    margin: 3px 0px 0px 0px;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    text-align: center;
+    
+    
+    
+
+}
+
+.tema-pagina{
+
+    width: 200px;
+    height: 100px;
+    margin: 10px auto;
+    display: inline-block;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.tema-pagina h4 p{
+
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    margin: 10px;
+    color: white;
+}
+
+.redes-sociales{
+
+    width: 300px;
+    height: 200px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    
+
+}
+
+.logo-footer{
+
+    width: 150px;
+    height: 150px;
+    display:flex;
+    justify-content: center;
+    position: absolute;
+    margin: 100PX auto;
+}
+
+.mapa iframe{
+
+    width: 200px;
+    height: 200px;
+    display: flex;
+    margin: 20px auto;
+    
+}
+
+.logos-foter ul li{
+
+    
+    display:  inline-block;
+    margin: 40px auto;
+}
+
+.logos-foter ul li a{
+
+    width: 60px;
+    height: 60px;
+    color: white;
+
+}
